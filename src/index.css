@@ -108,8 +108,9 @@ a {
 
 .nav__toggle {
     position: relative;
-    width: 32px;
-    height: 32px;
+    font-size: 1.25rem;
+    font-weight: initial;
+    color: #fff;
 }
 
 .nav__burger,
@@ -127,6 +128,22 @@ a {
 .nav__close {
     opacity: 0;
 }
+
+
+.contact-hidden {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .contact-hidden {
+        display: block;
+    }
+
+    .nav__hidden {
+        display: none;
+    }
+}
+
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
