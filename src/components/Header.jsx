@@ -96,9 +96,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="nav__data">
-          <ul className="nav__hidden">
+          <ul className="nav__hidden contact-btn">
             <li>
-              <a href="#" className="nav__link">
+              <a href="#" className="nav__link ">
                 Contact
               </a>
             </li>
