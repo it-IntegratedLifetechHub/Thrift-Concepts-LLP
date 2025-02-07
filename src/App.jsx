@@ -7,7 +7,7 @@ import Services from "./pages/Services/Page";
 import Tools from "./pages/Tools/Page";
 import Contact from "./pages/Contact/Page";
 import Blogs from "./pages/Blogs/Page";
-import Error from "./pages/error/Page";
+import Error from "./pages/Error/Page";
 
 function App() {
   return (
