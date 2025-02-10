@@ -5,6 +5,7 @@ import {
   FaXTwitter,
   FaEnvelope,
 } from "react-icons/fa6";
+import ThriftLogo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="footer-container">
           {/* Logo and Social Media Section */}
           <div className="footer-logo">
-            <img src="logo.png" alt="Thrift Concepts LLP" className="logo" />
+            <img src={ThriftLogo} alt="Thrift Concepts LLP" className="logo" />
             <p className="footer-text">
               "Stay connected! Follow us on social media for the latest tips,
               trends, and insights."
@@ -72,14 +73,14 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
       </footer>
-        <div className="footer-bottom">
-          <p>© 2024 Pixel Vikas</p>
-          <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Services</a>
-          </div>
-          <p>All Rights Reserved</p>
+      <div className="footer-bottom">
+        <p>© 2024 Pixel Vikas</p>
+        <div className="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Services</a>
         </div>
+        <p>All Rights Reserved</p>
+      </div>
     </>
   );
 };

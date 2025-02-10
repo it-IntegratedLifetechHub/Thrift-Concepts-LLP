@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import ThriftLogo from "../assets/logo.png";
 import {
   RiPlanetLine,
   RiMenuLine,
@@ -26,7 +28,7 @@ const Header = () => {
       <nav className="nav container">
         <div className="nav__data">
           <a href="#" className="nav__logo">
-            <RiPlanetLine /> Company
+            <img src={ThriftLogo} alt="" />
           </a>
 
           <div className="nav__toggle" onClick={toggleMenu}>
