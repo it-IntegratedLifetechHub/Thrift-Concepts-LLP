@@ -189,6 +189,7 @@ a {
     font-weight: 600;
     padding: 1.25rem 1.5rem;
     display: flex;
+    font-size: 1.3rem;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
@@ -228,6 +229,8 @@ a {
 .dropdown__link,
 .dropdown__sublink {
     padding: 1.25rem 2.5rem;
+    font-size: 1rem;
+
 
     background-color: #fef7f0;
     color: #50221d;
@@ -286,6 +289,7 @@ a {
         height: 100%;
         display: flex;
         column-gap: 3rem;
+        font-size: 1.3rem;
     }
 
     .nav__link {
