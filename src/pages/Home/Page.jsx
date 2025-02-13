@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 import { TbShieldCheck } from "react-icons/tb";
@@ -29,7 +29,18 @@ import S6 from "../../assets/gold.jpg";
 import S7 from "../../assets/mutual.jpg";
 import S8 from "../../assets/insurance.jpg";
 
+import whyus from "../../assets/whyus.png";
+
 const Home = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const tabContent = [
+    "At Thrift Concepts LLP, we prioritize financial clarity and strategic planning. Our expert consultants guide you in making informed decisions, ensuring your financial future is secure and prosperous.",
+    "We offer tailored financial solutions designed to meet your specific needs. Whether it's budgeting, investments, or business finance strategies, our personalized approach ensures maximum growth and stability.",
+    "Our team brings years of experience in financial planning and consultancy, helping individuals and businesses achieve their goals. With a deep understanding of market trends, we offer practical and results-driven strategies.",
+    "Transparency and trust are at the core of our services. We believe in building lasting relationships by providing clear, honest, and data-backed financial advice that empowers you to take control of your finances.",
+  ];
+
   return (
     <>
       <div className="hero">
@@ -109,12 +120,11 @@ const Home = () => {
               individuals and businesses to achieve financial stability and
               growth.”
             </p>
-        <div className="aboutus-contact-button">
-          <a href="#">Know More</a>
-          <MdArrowOutward />
-        </div>
+            <div className="aboutus-contact-button">
+              <a href="#">Know More</a>
+              <MdArrowOutward />
+            </div>
           </div>
-          
         </div>
       </div>
 
@@ -290,6 +300,44 @@ const Home = () => {
         <div className="aboutus-contact-button">
           <a href="#">Know More</a>
           <MdArrowOutward />
+        </div>
+      </div>
+
+      <div className="whyus">
+        <div className="whyus-section">
+          {/* Left Section */}
+          <div className="whyus-content">
+            <h1>
+              <span className="highlight">Why</span> Choose us?
+            </h1>
+
+            {/* Tab Navigation */}
+            <div className="tab">
+              {["Our Clients", "We Know", "Strategy", "Portfolio"].map(
+                (tab, index) => (
+                  <div
+                    key={index}
+                    className={`tab-button ${
+                      activeTab === index ? "active" : ""
+                    }`}
+                    onClick={() => setActiveTab(index)}
+                  >
+                    {tab}
+                  </div>
+                )
+              )}
+            </div>
+
+            {/* Tab Content */}
+            <div className="tab-data">
+              <p>{tabContent[activeTab]}</p>
+            </div>
+          </div>
+
+          {/* Right Section - Image Layout */}
+          <div className="whyus-images">
+            <img src={whyus} alt="Why Us 1" className="whyus-img img1" />
+          </div>
         </div>
       </div>
     </>
