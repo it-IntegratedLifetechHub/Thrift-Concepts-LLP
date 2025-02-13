@@ -340,6 +340,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div class="blog">
+        <div class="blog-section">
+          <h1 class="blog-heading">
+            <span>Our</span> Blogs
+          </h1>
+          <div class="blog-card-section">
+            <div class="blog-card">
+              <img src="blog-image.jpg" alt="Blog Image" class="blog-image" />
+              <div class="blog-category">LOAN</div>
+              <div class="blog-title">Top 5 Loans for Small Retailers</div>
+              <div class="blog-profile">
+                <img
+                  src="profile.jpg"
+                  alt="Profile Image"
+                  class="blog-profile-image"
+                />
+                <div class="blog-profile-content">
+                  <h2>John Doe</h2>
+                  <p>10/11/2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
