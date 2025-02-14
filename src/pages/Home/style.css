@@ -835,3 +835,151 @@
         font-size: 0.95rem;
     }
 }
+
+/* Contact Section */
+.contact-section {
+    background-color: #50221d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+}
+
+.contact-header {
+    color: #FFA829;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #3c1f2c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    background-color: #f4e3d7;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFA829;
+    color: #50221d;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3sease-in-out;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #50221d;
+    color: #FFA829;
+    border: 1px solid #FFA829;
+}
+
+.contact-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #50221d;
+    border-radius: 50%;
+    color: #FFA829;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .contact-arrow {
+    transform: rotate(45deg);
+    background-color: #FFA829;
+    color: #50221d;
+}
+
+/* Contact Tagline */
+.contact-tagline {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    width: 100%;
+    max-width: 550px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #FFA829;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-tagline {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-header {
+        font-size: 2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .contact-tagline {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .contact-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}

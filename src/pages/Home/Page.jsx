@@ -595,6 +595,46 @@ const Home = () => {
           </Slider>
         </div>
       </div>
+
+      <div className="contact-section">
+        <div className="contact-form">
+          <h1 className="contact-header">Let's Talk</h1>
+          <h2 className="contact-subtitle">Consultation is free</h2>
+
+          <form className="form">
+            <input
+              type="text"
+              name="full-name"
+              placeholder="Full Name / Company Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input type="tel" name="phone" placeholder="Phone No." required />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div className="submit-btn">
+              Book a Free Appointment
+              <span className="contact-arrow">
+                <MdArrowOutward />
+              </span>
+            </div>
+          </form>
+        </div>
+        <div className="contact-tagline">
+          <h1>
+            “Your Journey to{" "}
+            <span className="highlight">Financial Freedom</span> Starts Here!”
+          </h1>
+        </div>
+      </div>
     </>
   );
 };
