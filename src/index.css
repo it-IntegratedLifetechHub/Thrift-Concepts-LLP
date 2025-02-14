@@ -11,7 +11,7 @@
 body {
     font-family: "EB Garamond", serif;
     font-size: 0.938rem;
-    background-color: #fef7f0;
+    background-color: #fef7f1;
 }
 
 ul {
@@ -34,7 +34,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fef7f0;
+    background-color: #fef7f1;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
@@ -123,7 +123,7 @@ a {
 
 .contact-btn {
     background-color: #50221d;
-    color: #fef7f0;
+    color: #fef7f1;
     font-size: 1rem;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
@@ -134,7 +134,7 @@ a {
 }
 
 .contact-btn a {
-    color: #fef7f0;
+    color: #fef7f1;
 }
 
 /* Hover Effects */
@@ -179,7 +179,7 @@ a {
     }
 
     .nav__list {
-        background: #fef7f0;
+        background: #fef7f1;
         padding-top: 1rem;
     }
 }
@@ -223,7 +223,7 @@ a {
 
 .dropdown__link:hover {
     background-color: #50221d;
-    color: #fef7f0;
+    color: #fef7f1;
 }
 
 .dropdown__link,
@@ -232,7 +232,7 @@ a {
     font-size: 1rem;
 
 
-    background-color: #fef7f0;
+    background-color: #fef7f1;
     color: #50221d;
     display: flex;
     align-items: center;
@@ -344,7 +344,7 @@ a {
 
 /* General Footer Styles */
 .footer {
-    background-color: #fef7f0;
+    background-color: #fef7f1;
     color: #50221d;
     padding: 40px 20px;
 }
@@ -456,7 +456,7 @@ a {
     border: none;
     outline: none;
     background-color: #50221d;
-    color: #fef7f0;
+    color: #fef7f1;
 }
 
 .subscribe-box button {
@@ -481,7 +481,7 @@ a {
     background-color: #50221d;
     padding: 15px 20px;
     font-size: 14px;
-    color: #fef7f0;
+    color: #fef7f1;
 }
 
 .footer-bottom p {
@@ -494,7 +494,7 @@ a {
 }
 
 .footer-bottom a {
-    color: #fef7f0;
+    color: #fef7f1;
     text-decoration: none;
     transition: color 0.3s;
 }

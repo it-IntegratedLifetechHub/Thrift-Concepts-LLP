@@ -31,6 +31,14 @@ import S8 from "../../assets/insurance.jpg";
 
 import whyus from "../../assets/whyus.png";
 
+import blogbg from "../../assets/blog-bg.png";
+import profile from "../../assets/profile.png";
+
+import { FaStar, FaStarHalf } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Home = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -40,6 +48,115 @@ const Home = () => {
     "Our team brings years of experience in financial planning and consultancy, helping individuals and businesses achieve their goals. With a deep understanding of market trends, we offer practical and results-driven strategies.",
     "Transparency and trust are at the core of our services. We believe in building lasting relationships by providing clear, honest, and data-backed financial advice that empowers you to take control of your finances.",
   ];
+
+  const reviews = [
+    {
+      name: "Priya Sharma",
+      role: "Home Loan",
+      rating: 4.5,
+      review:
+        "I'm so glad I chose this consultancy for my home loan. They guided me through every step, making the process smooth and stress-free.",
+      image: profile,
+    },
+    {
+      name: "Amit Verma",
+      role: "Business Loan",
+      rating: 5,
+      review:
+        "Exceptional service! The team provided me with the best financial advice and helped me secure my business loan effortlessly.",
+      image: profile,
+    },
+    {
+      name: "Neha Gupta",
+      role: "Education Loan",
+      rating: 4,
+      review:
+        "The team was highly professional and made my education loan process hassle-free. Highly recommend their services!",
+      image: profile,
+    },
+    {
+      name: "Priya Sharma",
+      role: "Home Loan",
+      rating: 4.5,
+      review:
+        "I'm so glad I chose this consultancy for my home loan. They guided me through every step, making the process smooth and stress-free.",
+      image: profile,
+    },
+    {
+      name: "Amit Verma",
+      role: "Business Loan",
+      rating: 5,
+      review:
+        "Exceptional service! The team provided me with the best financial advice and helped me secure my business loan effortlessly.",
+      image: profile,
+    },
+    {
+      name: "Neha Gupta",
+      role: "Education Loan",
+      rating: 4,
+      review:
+        "The team was highly professional and made my education loan process hassle-free. Highly recommend their services!",
+      image: profile,
+    },
+  ];
+  // ReviewCard Component
+  const ReviewCard = ({ name, role, rating, review, image }) => {
+    return (
+      <div className="review-card">
+        {/* Star Rating */}
+        <div className="review-star">
+          {[...Array(5)].map((_, i) => (
+            <span key={i}>
+              {rating >= i + 1 ? (
+                <FaStar />
+              ) : rating > i ? (
+                <FaStarHalf />
+              ) : (
+                <FaStar />
+              )}
+            </span>
+          ))}
+        </div>
+        {/* Review Content */}
+        <div className="review-content">{review}</div>
+        {/* Reviewer Profile */}
+        <div className="review-profile">
+          <img src={image} alt={name} className="review-profile-image" />
+          <div className="review-profile-content">
+            <h2>{name}</h2>
+            <p>{role}</p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const settings = {
+    infinite: true,
+    speed: 200,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true, // Enable auto-scrolling
+    autoplaySpeed: 3000, // Set auto-scroll interval to 3 seconds (3000ms)
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true, // Ensure auto-scrolling works on smaller screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true, // Ensure auto-scrolling works on mobile screens
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -340,29 +457,142 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div class="blog">
-        <div class="blog-section">
-          <h1 class="blog-heading">
-            <span>Our</span> Blogs
+      <div className="blog">
+        <div className="blog-section">
+          <h1 className="blog-heading">
+            <span className="highlight">Our</span> Blogs
           </h1>
-          <div class="blog-card-section">
-            <div class="blog-card">
-              <img src="blog-image.jpg" alt="Blog Image" class="blog-image" />
-              <div class="blog-category">LOAN</div>
-              <div class="blog-title">Top 5 Loans for Small Retailers</div>
-              <div class="blog-profile">
+          <div className="blog-card-section">
+            <div className="blog-card">
+              <img src={blogbg} alt="Blog Image" className="blog-image" />
+              <div className="blog-card-content">
+                <div className="blog-category">LOAN</div>
+                <div className="blog-title">
+                  Top 5 Loans for Small Retailers
+                </div>
+              </div>
+              <div className="blog-profile">
                 <img
-                  src="profile.jpg"
+                  src={profile}
                   alt="Profile Image"
-                  class="blog-profile-image"
+                  className="blog-profile-image"
                 />
-                <div class="blog-profile-content">
+                <div className="blog-profile-content">
+                  <h2>John Doe</h2>
+                  <p>10/11/2024</p>
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <img src={blogbg} alt="Blog Image" className="blog-image" />
+              <div className="blog-card-content">
+                <div className="blog-category">LOAN</div>
+                <div className="blog-title">
+                  Top 5 Loans for Small Retailers
+                </div>
+              </div>
+              <div className="blog-profile">
+                <img
+                  src={profile}
+                  alt="Profile Image"
+                  className="blog-profile-image"
+                />
+                <div className="blog-profile-content">
+                  <h2>John Doe</h2>
+                  <p>10/11/2024</p>
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <img src={blogbg} alt="Blog Image" className="blog-image" />
+              <div className="blog-card-content">
+                <div className="blog-category">LOAN</div>
+                <div className="blog-title">
+                  Top 5 Loans for Small Retailers
+                </div>
+              </div>
+              <div className="blog-profile">
+                <img
+                  src={profile}
+                  alt="Profile Image"
+                  className="blog-profile-image"
+                />
+                <div className="blog-profile-content">
+                  <h2>John Doe</h2>
+                  <p>10/11/2024</p>
+                </div>
+              </div>
+            </div>
+            <div className="blog-card">
+              <img src={blogbg} alt="Blog Image" className="blog-image" />
+              <div className="blog-card-content">
+                <div className="blog-category">LOAN</div>
+                <div className="blog-title">
+                  Top 5 Loans for Small Retailers
+                </div>
+              </div>
+              <div className="blog-profile">
+                <img
+                  src={profile}
+                  alt="Profile Image"
+                  className="blog-profile-image"
+                />
+                <div className="blog-profile-content">
                   <h2>John Doe</h2>
                   <p>10/11/2024</p>
                 </div>
               </div>
             </div>
           </div>
+          <div className="aboutus-contact-button">
+            <a href="#">Read More</a>
+            <MdArrowOutward />
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="reviews">
+        <div className="reviews-section">
+          <h1>Client Review</h1>
+
+          <div className="review-card">
+            <div className="review-star">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStarHalf />
+            </div>
+            <div className="review-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+              aliquam sapiente qui illo quam voluptatibus libero dolor provident
+              quisquam ipsa vitae odit alias, repudiandae natus maiores omnis
+              possimus asperiores praesentium.
+            </div>
+            <div className="review-profile">
+              <img
+                src={profile}
+                alt="Review Image"
+                className="review-profile-image"
+              />
+              <div className="review-profile-content">
+                <h2>John Doe</h2>
+                <p>10/11/2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="reviews">
+        <div className="reviews-section">
+          <h1>
+            Client <span className="highlight">Reviews</span>
+          </h1>
+          <Slider {...settings} className="reviews-container">
+            {reviews.map((review, index) => (
+              <ReviewCard key={index} {...review} />
+            ))}
+          </Slider>
         </div>
       </div>
     </>
