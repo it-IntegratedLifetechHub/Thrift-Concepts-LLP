@@ -58,10 +58,9 @@ const Header = () => {
             <li
               className={`dropdown__item ${reportsOpen ? "show-dropdown" : ""}`}
             >
-              <Link className="nav__link" onClick={toggleReports}>
-                {" "}
+              <div className="nav__link" onClick={toggleReports}>
                 Tools <RiAddLine className="dropdown__arrow" />
-              </Link>
+              </div>
 
               <ul
                 className={`dropdown__menu ${
