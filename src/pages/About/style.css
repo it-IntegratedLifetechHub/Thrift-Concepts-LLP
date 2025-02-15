@@ -1,0 +1,107 @@
+/* Main container */
+.aboutus-page-container {
+    background-color: #4d2c21;
+    color: white;
+    font-family: "Georgia", serif;
+    padding: 50px 10%;
+    text-align: justify;
+}
+
+/* Header section */
+.aboutus-page-header {
+    width: 100%;
+    padding: 40px 10%;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.aboutus-page-header h1 {
+    font-size: 3.5rem;
+    color: #4d2c21;
+    font-weight: bold;
+}
+
+/* Highlighted "Us" in orange */
+.aboutus-page-header h1 span {
+    color: #f7a21a;
+}
+
+/* Underline effect */
+.underline {
+    width: 80px;
+    height: 5px;
+    background-color: #f7a21a;
+    margin-top: 5px;
+}
+
+/* Content section */
+.aboutus-page-content {
+
+    border-radius: 0 0 5px 5px;
+}
+
+.aboutus-page-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Bold effect for "THRIFT CONCEPTS LLP" */
+.aboutus-page-content strong {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutus-page-header h1 {
+        font-size: 3rem;
+    }
+
+    .aboutus-page-container {
+        padding: 40px 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus-page-header {
+        padding: 30px 5%;
+    }
+
+    .aboutus-page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutus-page-container {
+        padding: 30px 5%;
+    }
+
+    .aboutus-page-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-page-header {
+        padding: 25px 5%;
+    }
+
+    .aboutus-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .underline {
+        width: 60px;
+        height: 4px;
+    }
+
+    .aboutus-page-container {
+        padding: 25px 5%;
+    }
+
+    .aboutus-page-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
