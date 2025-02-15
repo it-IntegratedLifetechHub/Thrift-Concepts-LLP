@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import ThriftLogo from "../assets/logo.png";
 import {
@@ -43,23 +44,24 @@ const Header = () => {
         <div className={`nav__menu ${menuOpen ? "show-menu" : ""}`}>
           <ul className="nav__list">
             <li>
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+              <Link to="/about" className="nav__link">
                 About us
-              </a>
+              </Link>
             </li>
 
             <li
               className={`dropdown__item ${reportsOpen ? "show-dropdown" : ""}`}
             >
-              <div className="nav__link" onClick={toggleReports}>
+              <Link className="nav__link" onClick={toggleReports}>
+                {" "}
                 Tools <RiAddLine className="dropdown__arrow" />
-              </div>
+              </Link>
 
               <ul
                 className={`dropdown__menu ${
@@ -67,42 +69,42 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <a href="#emi" className="dropdown__link">
+                  <Link to="/emi-calc" className="dropdown__link">
                     <RiPieChartLine /> EMI Calculator
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#budg" className="dropdown__link">
+                  <Link to="/budget-track" className="dropdown__link">
                     <RiArrowUpDownLine /> Budget Tracking
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+              <Link to="/services" className="nav__link">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="nav__link">
+              <Link to="/blogs" className="nav__link">
                 Blogs
-              </a>
+              </Link>
             </li>
             <li className="contact-hidden">
-              <a href="#" className="nav__link">
+              <Link to="/contact" className="nav__link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="nav__data">
           <ul className="nav__hidden contact-btn">
             <li>
-              <a href="#" className="nav__link ">
+              <Link to="/contact" className="nav__link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
