@@ -1,6 +1,6 @@
 /* Main container */
 .aboutus-page-container {
-    background-color: #4d2c21;
+    background-color: #50221D;
     color: white;
     font-family: "Georgia", serif;
     padding: 50px 10%;
@@ -17,20 +17,16 @@
 
 .aboutus-page-header h1 {
     font-size: 3.5rem;
-    color: #4d2c21;
+    color: #50221D;
     font-weight: bold;
 }
 
-/* Highlighted "Us" in orange */
-.aboutus-page-header h1 span {
-    color: #f7a21a;
-}
 
 /* Underline effect */
 .underline {
-    width: 80px;
+    width: 185px;
     height: 5px;
-    background-color: #f7a21a;
+    background-color: #FFA829;
     margin-top: 5px;
 }
 
@@ -103,5 +99,115 @@
     .aboutus-page-content p {
         font-size: 14px;
         line-height: 1.5;
+    }
+}
+
+/* Trusted Banks Section */
+.trusted-banks-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.trusted-banks-section h1 {
+    font-size: 3.5rem;
+    color: #50221d;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.trusted-banks-underline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 5px;
+    background-color: #ffa829;
+}
+
+/* Slider Container */
+.slider-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Individual Bank Logo Container */
+.bank-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Bank Logo Styling */
+.bank-logo {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover Effects */
+.bank-logo-container:hover {
+    transform: scale(1.1);
+}
+
+.bank-logo:hover {
+    transform: scale(1.2);
+}
+
+/* Slick Slider Customization */
+.slick-slider {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .trusted-banks-section h1 {
+        font-size: 3rem;
+        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .bank-logo {
+        max-width: 200px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trusted-banks-section h1 {
+        font-size: 3rem;
+        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .bank-logo {
+        max-width: 180px;
+        height: 120px;
+    }
+
+    .trusted-banks-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trusted-banks-section h1 {
+        font-size: 3rem;
+        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .bank-logo {
+        max-width: 160px;
+        height: 110px;
     }
 }
