@@ -86,7 +86,7 @@ const About = () => {
       <div className="trusted-banks-section">
         <h1>
           Trusted <span className="highlight">Banks</span>
-        <div className="trusted-banks-underline"></div>
+          <div className="trusted-banks-underline"></div>
         </h1>
         <div className="slider-wrapper">
           <Slider {...settings}>
@@ -100,6 +100,54 @@ const About = () => {
               </div>
             ))}
           </Slider>
+        </div>
+      </div>
+
+      <div className="aboutus-page-mission-header">
+        <h1>
+          Our <span className="highlight">Mission</span>
+        </h1>
+        <div className="aboutus-page-mission-underline"></div>
+      </div>
+      <div className="aboutus-page-mission-container">
+        <div className="aboutus-page-mission-content">
+          <p>
+            Welcome to <strong>“THRIFT CONCEPTS LLP”</strong>, a trusted partner
+            in navigating the complexities of the financial world. We specialize
+            in providing expert financial advice and innovative solutions to
+            individuals, startups, and businesses, helping them achieve
+            financial success and long-term growth.
+          </p>
+
+          <p>
+            At <strong>“THRIFT CONCEPTS LLP”</strong>, we understand that every
+            financial journey is unique. That’s why we adopt a personalized
+            approach to address your specific needs, whether it’s financial
+            planning, investment advisory, tax strategies, or risk management.
+          </p>
+
+          <p>
+            With a team of seasoned experts and a commitment to excellence, we
+            strive to simplify financial decisions and empower you to achieve
+            your goals confidently.
+          </p>
+        </div>
+      </div>
+
+      <div className="aboutus-page-vision-header">
+        <h1>
+          Our <span className="highlight">Vision</span>
+        </h1>
+        <div className="aboutus-page-vision-underline"></div>
+      </div>
+      <div className="aboutus-page-vision-container">
+        <div className="aboutus-page-vision-content">
+          <p>
+            To become the <strong>go-to financial consultancy</strong> firm
+            known for transforming financial challenges into opportunities while
+            building enduring client relationships based on trust and mutual
+            success.
+          </p>
         </div>
       </div>
     </>

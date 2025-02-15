@@ -211,3 +211,205 @@
         height: 110px;
     }
 }
+
+
+/* Main container */
+.aboutus-page-mission-container {
+    color: #50221d;
+    padding: 2rem;
+    text-align: right;
+}
+
+/* Header section */
+.aboutus-page-mission-header {
+    width: 100%;
+    padding: 2rem;
+    text-align: right;
+    border-radius: 5px 5px 0 0;
+}
+
+.aboutus-page-mission-header h1 {
+    font-size: 3.5rem;
+    color: #50221d;
+    font-weight: bold;
+    display: inline-block;
+    /* Ensure underline aligns with text */
+}
+
+/* Underline effect */
+.aboutus-page-mission-underline {
+    width: 185px;
+    height: 5px;
+    background-color: #ffa829;
+    margin-top: 5px;
+    margin-left: auto;
+    /* Align underline to the right */
+}
+
+/* Content section */
+.aboutus-page-mission-content {
+    border-radius: 0 0 5px 5px;
+}
+
+.aboutus-page-mission-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutus-page-mission-header h1 {
+        font-size: 3rem;
+    }
+
+    .aboutus-page-mission-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus-page-mission-header {
+        padding: 30px 5%;
+    }
+
+    .aboutus-page-mission-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutus-page-mission-container {
+        padding: 1rem;
+    }
+
+    .aboutus-page-mission-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-page-mission-header {
+        padding: 25px 5%;
+    }
+
+    .aboutus-page-mission-header h1 {
+        font-size: 2rem;
+    }
+
+    .aboutus-page-mission-underline {
+        width: 60px;
+        height: 4px;
+    }
+
+    .aboutus-page-mission-container {
+        padding: 1rem;
+    }
+
+    .aboutus-page-mission-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+
+/* Main container */
+.aboutus-page-vision-container {
+    color: #50221d;
+    padding: 2rem;
+    text-align: left;
+    /* Align text to the left */
+}
+
+/* Header section */
+.aboutus-page-vision-header {
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+    /* Align header to the left */
+    border-radius: 5px 5px 0 0;
+}
+
+.aboutus-page-vision-header h1 {
+    font-size: 3.5rem;
+    color: #50221d;
+    font-weight: bold;
+    display: inline-block;
+    /* Ensure underline aligns with text */
+}
+
+/* Underline effect */
+.aboutus-page-vision-underline {
+    width: 185px;
+    height: 5px;
+    background-color: #ffa829;
+    margin-top: 5px;
+    margin-left: 0;
+    /* Align underline to the left */
+}
+
+/* Content section */
+.aboutus-page-vision-content {
+    border-radius: 0 0 5px 5px;
+}
+
+.aboutus-page-vision-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutus-page-vision-header h1 {
+        font-size: 3rem;
+    }
+
+    .aboutus-page-vision-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus-page-vision-header {
+        padding: 30px 5%;
+    }
+
+    .aboutus-page-vision-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutus-page-vision-container {
+        padding: 1rem;
+    }
+
+    .aboutus-page-vision-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-page-vision-header {
+        padding: 25px 5%;
+    }
+
+    .aboutus-page-vision-header h1 {
+        font-size: 2rem;
+    }
+
+    .aboutus-page-vision-underline {
+        width: 60px;
+        height: 4px;
+    }
+
+    .aboutus-page-vision-container {
+        padding: 1rem;
+    }
+
+    .aboutus-page-vision-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
