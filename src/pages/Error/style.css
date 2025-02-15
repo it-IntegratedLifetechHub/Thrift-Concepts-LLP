@@ -1,0 +1,84 @@
+/* General styles */
+.page_404 {
+    padding: 40px 0;
+    background: #fef7f1;
+    font-family: "Arvo", serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 404 background image */
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content box */
+.contant_box_404 {
+    margin-top: -50px;
+}
+
+.contant_box_404 h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contant_box_404 p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Link button */
+.link_404 {
+    color: #fff !important;
+    padding: 12px 24px;
+    background: #50221D;
+    margin: 20px 0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link_404:hover {
+    background: #2e8b24;
+    transform: scale(1.05);
+}
+
+.link_404:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(57, 172, 49, 0.5);
+}
