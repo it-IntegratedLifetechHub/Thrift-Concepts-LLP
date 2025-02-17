@@ -12,6 +12,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { FaLightbulb } from "react-icons/fa";
+import { FaHandsHelping } from "react-icons/fa";
+import { PiUserFocus } from "react-icons/pi";
+import { PiUsersLight } from "react-icons/pi";
+
 const About = () => {
   const settings = {
     infinite: true, // Enable infinite scrolling
@@ -82,7 +87,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
       <div className="trusted-banks-section">
         <h1>
           Trusted <span className="highlight">Banks</span>
@@ -102,7 +106,6 @@ const About = () => {
           </Slider>
         </div>
       </div>
-
       <div className="aboutus-page-mission-header">
         <h1>
           Our <span className="highlight">Mission</span>
@@ -133,7 +136,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
       <div className="aboutus-page-vision-header">
         <h1>
           Our <span className="highlight">Vision</span>
@@ -148,6 +150,54 @@ const About = () => {
             building enduring client relationships based on trust and mutual
             success.
           </p>
+        </div>
+      </div>
+      <div className="core-values-section">
+        <h1 className="core-values-title">
+          CORE <br /> <span className="highlight">VALUES</span>
+          <div className="core-values-underline"></div>
+        </h1>
+        <div className="core-values-container">
+          <div className="core-values-card left">
+            <FaLightbulb className="core-values-icon" />
+            <div className="core-values-content">
+              <h2>INNOVATION</h2>
+              <p>
+                We stay ahead by utilizing modern tools and strategies to create
+                effective solutions.
+              </p>
+            </div>
+          </div>
+          <div className="core-values-card right">
+            <FaHandsHelping className="core-values-icon" />
+            <div className="core-values-content">
+              <h2>INTEGRITY</h2>
+              <p>
+                We believe in honesty, fairness, and accountability in all our
+                interactions.
+              </p>
+            </div>
+          </div>
+          <div className="core-values-card left">
+            <PiUserFocus className="core-values-icon" />
+            <div className="core-values-content">
+              <h2>CLIENT FOCUS</h2>
+              <p>
+                Your goals are our top priority, and your success is our
+                ultimate reward.
+              </p>
+            </div>
+          </div>
+          <div className="core-values-card right">
+            <PiUsersLight className="core-values-icon" />
+            <div className="core-values-content">
+              <h2>COLLABORATION</h2>
+              <p>
+                We work hand-in-hand with our clients to ensure their vision
+                becomes reality.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
