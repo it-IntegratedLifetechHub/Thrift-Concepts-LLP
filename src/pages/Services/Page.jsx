@@ -9,7 +9,6 @@ import { FaSchool } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
 import { FaPiggyBank } from "react-icons/fa";
 import { TbHomeSpark } from "react-icons/tb";
-import { MdArrowOutward } from "react-icons/md";
 
 import S1 from "../../assets/homeloan.png";
 import S2 from "../../assets/personal.jpg";
@@ -202,7 +201,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </>
   );
