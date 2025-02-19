@@ -942,9 +942,6 @@
     font-weight: bold;
 }
 
-.highlight {
-    color: #FFA829;
-}
 
 /* Responsive Design */
 @media (max-width: 900px) {
