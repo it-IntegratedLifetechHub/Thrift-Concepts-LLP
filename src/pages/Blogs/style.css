@@ -1,0 +1,119 @@
+/* Blog Page Styling */
+.blog-page {
+    text-align: center;
+    background-color: #fef8f2;
+    padding: 40px 20px;
+}
+
+.blog-page-header {
+    font-size: 3rem;
+    font-family: "Georgia", serif;
+    color: #50221D;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #a67c52;
+    /* Soft Brown Border */
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Input Field */
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #555;
+    font-family: "Arial", sans-serif;
+    background-color: transparent;
+}
+
+/* Add Focus Effect */
+.search-input:focus {
+    background-color: #f9f5f1;
+}
+
+/* Search Button */
+.search-button {
+    background-color: #4d1f0f;
+    /* Dark Brown */
+    border: none;
+    padding: 14px 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover & Focus Effects */
+.search-button:hover,
+.search-button:focus {
+    background-color: #3a140a;
+}
+
+/* Search Icon */
+.search-icon {
+    color: white;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-page-header {
+        font-size: 2.5rem;
+    }
+
+    .search-container {
+        max-width: 350px;
+    }
+
+    .search-input {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .search-button {
+        padding: 12px 14px;
+    }
+
+    .search-icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-page-header {
+        font-size: 2rem;
+    }
+
+    .search-container {
+        max-width: 300px;
+    }
+
+    .search-input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .search-button {
+        padding: 10px 12px;
+    }
+
+    .search-icon {
+        font-size: 16px;
+    }
+}

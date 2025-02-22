@@ -1,0 +1,147 @@
+/* Blog Page Styling */
+
+/* Blog Content Wrapper */
+.mdx-page {
+    max-width: 1000px;
+    text-align: left;
+    padding: 2rem 1.5rem;
+}
+
+.mdx-header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Title Styling */
+.mdx-title {
+    font-size: 2.5rem;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    color: #50221D;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.mdx-subtitle {
+    font-size: 1rem;
+    color: #6c4c3b;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 12px;
+}
+
+/* Blog Date */
+.mdx-date {
+    font-size: 0.9rem;
+    color: #8b6f5e;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.mdx-paragraph {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Blog Image */
+.mdx-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mdx-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.mdx-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #50221D;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f2c2a2;
+    padding-bottom: 5px;
+}
+
+/* List Styling */
+.mdx-list {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+.mdx-list-item {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.mdx-pros {
+    color: green;
+    font-weight: bold;
+}
+
+.mdx-cons {
+    color: red;
+    font-weight: bold;
+}
+
+/* Call to Action */
+.mdx-call-to-action {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #50221D;
+    background-color: #fce8d8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mdx-title {
+        font-size: 2rem;
+    }
+
+    .mdx-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .mdx-paragraph {
+        font-size: 1rem;
+    }
+
+    .mdx-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .mdx-title {
+        font-size: 1.8rem;
+    }
+
+    .mdx-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .mdx-paragraph {
+        font-size: 0.95rem;
+    }
+}

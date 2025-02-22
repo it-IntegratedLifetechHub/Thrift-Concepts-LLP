@@ -13,6 +13,7 @@ import Blogs from "./pages/Blogs/Page";
 import Error from "./pages/Error/Page";
 import ScrollToTopButton from "./components/ScrollToTopButton"; // New component for the scroll-to-top button
 import SingleService from "./pages/SingleService/Page";
+import SingleBlog from "./pages/SingleBlog/Page";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -65,6 +66,7 @@ const MainApp = ({ loading, setLoading, progress, setProgress }) => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/:sername" element={<SingleService />} />
+        <Route path="/blogs/:blogname" element={<SingleBlog />} />
         <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />
