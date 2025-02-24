@@ -635,6 +635,7 @@
 .blog-card {
     background: #fff;
     border-radius: 15px;
+    cursor: pointer;
     overflow: hidden;
     width: 270px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -671,12 +672,13 @@
     font-size: 1.3rem;
     margin: 10px;
     text-align: left;
-    color: #333;
+    color: #50221d;
 }
 
 .blog-profile {
     display: flex;
     align-items: center;
+    text-align: left;
     padding: 10px;
     border-top: 1px solid #ddd;
 }
